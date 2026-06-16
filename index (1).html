@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitClub | Transformá tu mejor versión</title>
+<meta name="description" content="FitClub es el gimnasio premium para entrenar musculación, running, cross training, calistenia y group training. Planes flexibles, entrenadores expertos y seguimiento personalizado.">
+<meta name="keywords" content="gimnasio, FitClub, musculación, cross training, running, calistenia, group training, entrenamiento personal">
+<meta property="og:title" content="FitClub - Transformá tu mejor versión">
+<meta property="og:description" content="El gimnasio premium que necesitás. Disciplinas, planes y entrenadores de primer nivel.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="page-loader" aria-hidden="true">
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner container">
+    <a href="#home" class="logo">FIT<span>CLUB</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Inicio</a>
+      <a href="#disciplinas" class="nav-link">Disciplinas</a>
+      <a href="#horarios" class="nav-link">Horarios</a>
+      <a href="#planes" class="nav-link">Planes</a>
+      <a href="#entrenadores" class="nav-link">Entrenadores</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button class="btn btn-outline btn-sm" id="openLoginBtn">Iniciar sesión</button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" alt="Persona entrenando con pesas en FitClub" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content container">
+    <p class="hero-eyebrow fade-up">El club de entrenamiento N°1</p>
+    <h1 class="hero-title fade-up">Transformá tu <span class="text-yellow">mejor versión</span> en FitClub</h1>
+    <p class="hero-subtitle fade-up">Musculación, running, cross training, calistenia y clases grupales con entrenadores expertos. Tu evolución empieza hoy.</p>
+    <div class="hero-actions fade-up">
+      <button class="btn btn-primary btn-lg" id="heroStartBtn">Comenzar Ahora</button>
+      <a href="#planes" class="btn btn-outline-light btn-lg">Ver Planes</a>
+    </div>
+
+    <div class="hero-stats fade-up">
+      <div class="hero-stat"><span class="stat-num" data-count="1200">0</span><span class="stat-label">Socios activos</span></div>
+      <div class="hero-stat"><span class="stat-num" data-count="15">0</span><span class="stat-label">Entrenadores</span></div>
+      <div class="hero-stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">Años de trayectoria</span></div>
+    </div>
+  </div>
+
+  <a href="#nosotros" class="scroll-indicator" aria-label="Bajar">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ============ SOBRE NOSOTROS ============ -->
+<section class="section" id="nosotros">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1200&auto=format&fit=crop" alt="Interior del gimnasio FitClub" loading="lazy">
+        <div class="about-badge">
+          <i class="fa-solid fa-trophy"></i>
+          <div><strong>9 años</strong><span>formando atletas</span></div>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="section-eyebrow">Sobre nosotros</p>
+        <h2 class="section-title">Más que un gimnasio, una comunidad de superación</h2>
+        <p class="section-text">FitClub nació en 2017 con una idea simple: el entrenamiento serio no tiene por qué ser intimidante. Empezamos en un galpón con diez máquinas y hoy somos un espacio de referencia para quienes buscan progreso real, medible y sostenido en el tiempo.</p>
+        <p class="section-text">Creemos en el entrenamiento basado en evidencia, en el acompañamiento profesional constante y en construir hábitos que duren más que una motivación pasajera.</p>
+
+        <div class="values-grid">
+          <div class="value-item">
+            <i class="fa-solid fa-bullseye"></i>
+            <div><strong>Misión</strong><p>Ayudarte a alcanzar tu mejor condición física con un plan claro y profesional.</p></div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-heart"></i>
+            <div><strong>Valores</strong><p>Disciplina, comunidad, constancia y respeto por tu proceso individual.</p></div>
+          </div>
+        </div>
+
+        <ul class="benefits-list">
+          <li><i class="fa-solid fa-check"></i> Entrenadores certificados en cada disciplina</li>
+          <li><i class="fa-solid fa-check"></i> Seguimiento de progreso con datos reales</li>
+          <li><i class="fa-solid fa-check"></i> Equipamiento premium y mantenimiento constante</li>
+          <li><i class="fa-solid fa-check"></i> Horarios flexibles, mañana, tarde y noche</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCIPLINAS ============ -->
+<section class="section section-dark" id="disciplinas">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="section-eyebrow">Lo que entrenamos</p>
+      <h2 class="section-title">Disciplinas FitClub</h2>
+      <p class="section-text">Elegí tu camino o combiná varios. Cada disciplina tiene programación propia y entrenadores especializados.</p>
+    </div>
+
+    <div class="disciplines-grid">
+
+      <article class="discipline-card reveal">
+        <div class="discipline-img">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=900&auto=format&fit=crop" alt="Musculación en FitClub" loading="lazy">
+          <span class="discipline-icon"><i class="fa-solid fa-dumbbell"></i></span>
+        </div>
+        <div class="discipline-body">
+          <h3>Musculación</h3>
+          <p>Hipertrofia y fuerza con planificación progresiva en nuestra sala de pesas equipada con máquinas y peso libre.</p>
+          <div class="discipline-meta">
+            <span><i class="fa-solid fa-bolt"></i> Fuerza · Volumen</span>
+            <span class="level level-todos">Todos los niveles</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="discipline-card reveal">
+        <div class="discipline-img">
+          <img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?q=80&w=900&auto=format&fit=crop" alt="Running en FitClub" loading="lazy">
+          <span class="discipline-icon"><i class="fa-solid fa-person-running"></i></span>
+        </div>
+        <div class="discipline-body">
+          <h3>Running</h3>
+          <p>Planes de carrera en cinta y exterior, técnica de pisada y trabajo aeróbico para mejorar tu rendimiento.</p>
+          <div class="discipline-meta">
+            <span><i class="fa-solid fa-bolt"></i> Resistencia · Cardio</span>
+            <span class="level level-inter">Intermedio</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="discipline-card reveal">
+        <div class="discipline-img">
+          <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?q=80&w=900&auto=format&fit=crop" alt="Cross Training en FitClub" loading="lazy">
+          <span class="discipline-icon"><i class="fa-solid fa-fire"></i></span>
+        </div>
+        <div class="discipline-body">
+          <h3>Cross Training</h3>
+          <p>WODs de alta intensidad que combinan fuerza, gimnasia y cardio para una mejora física integral.</p>
+          <div class="discipline-meta">
+            <span><i class="fa-solid fa-bolt"></i> Intensidad alta</span>
+            <span class="level level-avanzado">Avanzado</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="discipline-card reveal">
+        <div class="discipline-img">
+          <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=900&auto=format&fit=crop" alt="Calistenia en FitClub" loading="lazy">
+          <span class="discipline-icon"><i class="fa-solid fa-person"></i></span>
+        </div>
+        <div class="discipline-body">
+          <h3>Calistenia</h3>
+          <p>Control corporal y fuerza relativa: dominadas, fondos, parada de manos y progresiones de movilidad.</p>
+          <div class="discipline-meta">
+            <span><i class="fa-solid fa-bolt"></i> Peso corporal</span>
+            <span class="level level-inter">Intermedio</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="discipline-card reveal">
+        <div class="discipline-img">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=900&auto=format&fit=crop" alt="Group Training en FitClub" loading="lazy">
+          <span class="discipline-icon"><i class="fa-solid fa-people-group"></i></span>
+        </div>
+        <div class="discipline-body">
+          <h3>Group Training</h3>
+          <p>Clases grupales dinámicas y motivadoras, ideales para entrenar acompañado y sumar energía colectiva.</p>
+          <div class="discipline-meta">
+            <span><i class="fa-solid fa-bolt"></i> Energía grupal</span>
+            <span class="level level-todos">Todos los niveles</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORARIOS ============ -->
+<section class="section" id="horarios">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="section-eyebrow">Programación semanal</p>
+      <h2 class="section-title">Horarios de clases</h2>
+      <p class="section-text">Sumate a cualquier clase según tu plan. Horarios sujetos a disponibilidad de cupos.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table class="schedule-table" id="scheduleTable">
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Running</th>
+            <th>Cross Training</th>
+            <th>Calistenia</th>
+            <th>Group Training</th>
+            <th>Musculación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Hora">07:00</td>
+            <td data-label="Running">Lun / Mié / Vie</td>
+            <td data-label="Cross Training">—</td>
+            <td data-label="Calistenia">Mar / Jue</td>
+            <td data-label="Group Training">—</td>
+            <td data-label="Musculación">Lun a Sáb</td>
+          </tr>
+          <tr>
+            <td data-label="Hora">09:00</td>
+            <td data-label="Running">—</td>
+            <td data-label="Cross Training">Lun / Mié / Vie</td>
+            <td data-label="Calistenia">—</td>
+            <td data-label="Group Training">Mar / Jue</td>
+            <td data-label="Musculación">Lun a Sáb</td>
+          </tr>
+          <tr>
+            <td data-label="Hora">12:00</td>
+            <td data-label="Running">—</td>
+            <td data-label="Cross Training">—</td>
+            <td data-label="Calistenia">Lun a Vie</td>
+            <td data-label="Group Training">—</td>
+            <td data-label="Musculación">Lun a Sáb</td>
+          </tr>
+          <tr>
+            <td data-label="Hora">18:00</td>
+            <td data-label="Running">Mar / Jue</td>
+            <td data-label="Cross Training">Lun / Mié / Vie</td>
+            <td data-label="Calistenia">—</td>
+            <td data-label="Group Training">Lun / Mié / Vie</td>
+            <td data-label="Musculación">Lun a Sáb</td>
+          </tr>
+          <tr>
+            <td data-label="Hora">20:00</td>
+            <td data-label="Running">Lun / Mié / Vie</td>
+            <td data-label="Cross Training">Mar / Jue</td>
+            <td data-label="Calistenia">Lun / Mié / Vie</td>
+            <td data-label="Group Training">Sáb</td>
+            <td data-label="Musculación">Lun a Sáb</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANES ============ -->
+<section class="section section-dark" id="planes">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="section-eyebrow">Membresías</p>
+      <h2 class="section-title">Elegí tu plan</h2>
+      <p class="section-text">Sin letra chica. Cambiá o cancelá tu plan cuando quieras.</p>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan-card reveal">
+        <h3>Plan Básico</h3>
+        <p class="plan-price"><span>$</span>15.000<small>/mes</small></p>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Acceso a sala de musculación</li>
+          <li><i class="fa-solid fa-check"></i> 1 disciplina grupal a elección</li>
+          <li><i class="fa-solid fa-check"></i> Horario de 8 a 16hs</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Rutina personalizada</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Seguimiento de entrenador</li>
+        </ul>
+        <button class="btn btn-outline btn-block plan-select" data-plan="Básico">Inscribirme</button>
+      </div>
+
+      <div class="plan-card plan-featured reveal">
+        <span class="plan-badge">Más elegido</span>
+        <h3>Plan Plus</h3>
+        <p class="plan-price"><span>$</span>22.000<small>/mes</small></p>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Acceso ilimitado a todas las disciplinas</li>
+          <li><i class="fa-solid fa-check"></i> Horario completo (6 a 23hs)</li>
+          <li><i class="fa-solid fa-check"></i> Rutina personalizada</li>
+          <li><i class="fa-solid fa-check"></i> Evaluación física mensual</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Entrenador personal 1 a 1</li>
+        </ul>
+        <button class="btn btn-primary btn-block plan-select" data-plan="Plus">Inscribirme</button>
+      </div>
+
+      <div class="plan-card reveal">
+        <h3>Plan Premium</h3>
+        <p class="plan-price"><span>$</span>32.000<small>/mes</small></p>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Todo lo del Plan Plus</li>
+          <li><i class="fa-solid fa-check"></i> Entrenador personal 1 a 1</li>
+          <li><i class="fa-solid fa-check"></i> Plan nutricional</li>
+          <li><i class="fa-solid fa-check"></i> Acceso prioritario a cupos</li>
+          <li><i class="fa-solid fa-check"></i> Invitados gratis al mes</li>
+        </ul>
+        <button class="btn btn-outline btn-block plan-select" data-plan="Premium">Inscribirme</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTRENADORES ============ -->
+<section class="section" id="entrenadores">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="section-eyebrow">Nuestro equipo</p>
+      <h2 class="section-title">Entrenadores FitClub</h2>
+      <p class="section-text">Profesionales certificados que diseñan tu progreso, no solo tu rutina.</p>
+    </div>
+
+    <div class="trainers-grid">
+      <div class="trainer-card reveal">
+        <div class="trainer-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600&auto=format&fit=crop" alt="Entrenador Martín Ríos" loading="lazy"></div>
+        <h3>Martín Ríos</h3>
+        <p class="trainer-spec">Musculación · Fuerza</p>
+        <p class="trainer-exp">8 años de experiencia</p>
+        <div class="trainer-social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+      <div class="trainer-card reveal">
+        <div class="trainer-img"><img src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?q=80&w=600&auto=format&fit=crop" alt="Entrenadora Lucía Fernández" loading="lazy"></div>
+        <h3>Lucía Fernández</h3>
+        <p class="trainer-spec">Running · Cardio</p>
+        <p class="trainer-exp">6 años de experiencia</p>
+        <div class="trainer-social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+      <div class="trainer-card reveal">
+        <div class="trainer-img"><img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=600&auto=format&fit=crop" alt="Entrenador Diego Suárez" loading="lazy"></div>
+        <h3>Diego Suárez</h3>
+        <p class="trainer-spec">Cross Training</p>
+        <p class="trainer-exp">10 años de experiencia</p>
+        <div class="trainer-social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+      <div class="trainer-card reveal">
+        <div class="trainer-img"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600&auto=format&fit=crop" alt="Entrenadora Sofía Castro" loading="lazy"></div>
+        <h3>Sofía Castro</h3>
+        <p class="trainer-spec">Calistenia · Movilidad</p>
+        <p class="trainer-exp">5 años de experiencia</p>
+        <div class="trainer-social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="section section-dark" id="galeria">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="section-eyebrow">Vida FitClub</p>
+      <h2 class="section-title">Galería</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1581009137042-c552e485697a?q=80&w=1400&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?q=80&w=500&auto=format&fit=crop" alt="Musculación" loading="lazy">
+      </button>
+      <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=1400&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=500&auto=format&fit=crop" alt="Running" loading="lazy">
+      </button>
+      <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1400&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=500&auto=format&fit=crop" alt="Cross Training" loading="lazy">
+      </button>
+      <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1400&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=500&auto=format&fit=crop" alt="Calistenia" loading="lazy">
+      </button>
+      <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1400&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=500&auto=format&fit=crop" alt="Clases grupales" loading="lazy">
+      </button>
+      <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1400&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=500&auto=format&fit=crop" alt="Entrenamiento funcional" loading="lazy">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="section-eyebrow">Hablemos</p>
+      <h2 class="section-title">Contacto</h2>
+    </div>
+
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cName">Nombre</label>
+            <input type="text" id="cName" name="name" required placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" name="email" required placeholder="tu@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cPhone">Teléfono</label>
+          <input type="tel" id="cPhone" name="phone" placeholder="+54 9 11 1234 5678">
+        </div>
+        <div class="form-group">
+          <label for="cMsg">Mensaje</label>
+          <textarea id="cMsg" name="message" rows="4" required placeholder="Contanos qué estás buscando"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+        <p class="form-success" id="formSuccess" role="status"></p>
+      </form>
+
+      <div class="contact-info reveal">
+        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div><strong>WhatsApp</strong><span>+54 9 11 1234-5678</span></div>
+        </a>
+        <a href="mailto:hola@fitclub.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><strong>Email</strong><span>hola@fitclub.com</span></div>
+        </a>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong>Dirección</strong><span>Av. Siempre Viva 1234, CABA</span></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <div><strong>Horario</strong><span>Lun a Vie 6:00–23:00 · Sáb 8:00–14:00</span></div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps?q=Buenos%20Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de FitClub"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo">FIT<span>CLUB</span></a>
+      <p>El club de entrenamiento donde tu progreso es la meta. Disciplina, comunidad y resultados reales.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="#disciplinas">Disciplinas</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#planes">Planes</a>
+      <a href="#entrenadores">Entrenadores</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Horario de atención</h4>
+      <span>Lunes a Viernes: 6:00 – 23:00</span>
+      <span>Sábados: 8:00 – 14:00</span>
+      <span>Domingos: Cerrado</span>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <span><i class="fa-solid fa-location-dot"></i> Av. Siempre Viva 1234, CABA</span>
+      <span><i class="fa-solid fa-phone"></i> +54 9 11 1234-5678</span>
+      <span><i class="fa-solid fa-envelope"></i> hola@fitclub.com</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> FitClub. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ============ MODAL: LOGIN / REGISTRO ============ -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal modal-auth">
+    <button class="modal-close" data-close="authModal" aria-label="Cerrar">&times;</button>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-tab="login">Iniciar sesión</button>
+      <button class="auth-tab" data-tab="register">Crear cuenta</button>
+    </div>
+
+    <form id="loginForm" class="auth-form active">
+      <div class="form-group">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" required placeholder="tu@email.com">
+      </div>
+      <div class="form-group">
+        <label for="loginPass">Contraseña</label>
+        <input type="password" id="loginPass" required placeholder="••••••••">
+      </div>
+      <p class="auth-error" id="loginError"></p>
+      <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+      <p class="auth-hint">Demo admin: <strong>admin@fitclub.com</strong> / <strong>admin123</strong></p>
+    </form>
+
+    <form id="registerForm" class="auth-form">
+      <div class="form-group">
+        <label for="regName">Nombre completo</label>
+        <input type="text" id="regName" required placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" required placeholder="tu@email.com">
+      </div>
+      <div class="form-group">
+        <label for="regPass">Contraseña</label>
+        <input type="password" id="regPass" required placeholder="Mínimo 6 caracteres" minlength="6">
+      </div>
+      <div class="form-group">
+        <label for="regPlan">Plan</label>
+        <select id="regPlan">
+          <option value="Básico">Plan Básico</option>
+          <option value="Plus" selected>Plan Plus</option>
+          <option value="Premium">Plan Premium</option>
+        </select>
+      </div>
+      <p class="auth-error" id="registerError"></p>
+      <button type="submit" class="btn btn-primary btn-block">Crear cuenta</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ MODAL: LIGHTBOX GALERÍA ============ -->
+<div class="modal-overlay" id="lightboxModal">
+  <div class="lightbox-content">
+    <button class="modal-close" data-close="lightboxModal" aria-label="Cerrar">&times;</button>
+    <img id="lightboxImg" src="" alt="Imagen de galería ampliada">
+  </div>
+</div>
+
+<!-- ============ ÁREA DE SOCIOS (Dashboard usuario) ============ -->
+<div class="app-overlay" id="memberArea">
+  <div class="app-shell">
+    <aside class="app-sidebar">
+      <a href="#home" class="logo app-logo">FIT<span>CLUB</span></a>
+      <nav class="app-nav">
+        <button class="app-nav-link active" data-panel="memberHome"><i class="fa-solid fa-house"></i> Mi perfil</button>
+        <button class="app-nav-link" data-panel="memberRoutine"><i class="fa-solid fa-clipboard-list"></i> Mi rutina</button>
+        <button class="app-nav-link" data-panel="memberSchedule"><i class="fa-solid fa-calendar-check"></i> Reservas</button>
+        <button class="app-nav-link" data-panel="memberProgress"><i class="fa-solid fa-chart-line"></i> Mi progreso</button>
+        <button class="app-nav-link" data-panel="memberHistory"><i class="fa-solid fa-clock-rotate-left"></i> Historial</button>
+      </nav>
+      <button class="btn btn-outline-light btn-sm btn-block" id="logoutBtnMember"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</button>
+    </aside>
+
+    <main class="app-main">
+      <header class="app-topbar">
+        <button class="app-back" id="closeMemberArea"><i class="fa-solid fa-arrow-left"></i> Volver al sitio</button>
+        <div class="app-user-chip"><i class="fa-solid fa-circle-user"></i> <span id="memberTopbarName">Socio</span></div>
+      </header>
+
+      <!-- Panel: Mi perfil -->
+      <section class="app-panel active" id="memberHome">
+        <h2>Hola, <span id="memberName">Socio</span> 👋</h2>
+        <div class="profile-cards">
+          <div class="info-card">
+            <i class="fa-solid fa-id-card"></i>
+            <div><span>Plan contratado</span><strong id="memberPlan">—</strong></div>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span><strong id="memberEmail">—</strong></div>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-calendar-day"></i>
+            <div><span>Socio desde</span><strong id="memberSince">—</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel: Rutina -->
+      <section class="app-panel" id="memberRoutine">
+        <h2>Mi rutina asignada</h2>
+        <div id="routineContent" class="routine-box"></div>
+      </section>
+
+      <!-- Panel: Reservas -->
+      <section class="app-panel" id="memberSchedule">
+        <h2>Reservar clase</h2>
+        <form id="bookingForm" class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookDiscipline">Disciplina</label>
+              <select id="bookDiscipline" required>
+                <option value="">Elegí una disciplina</option>
+                <option>Musculación</option>
+                <option>Running</option>
+                <option>Cross Training</option>
+                <option>Calistenia</option>
+                <option>Group Training</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bookDay">Día</label>
+              <input type="date" id="bookDay" required>
+            </div>
+            <div class="form-group">
+              <label for="bookTime">Hora</label>
+              <select id="bookTime" required>
+                <option>07:00</option>
+                <option>09:00</option>
+                <option>12:00</option>
+                <option>18:00</option>
+                <option>20:00</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Reservar</button>
+        </form>
+        <h3 class="mt-lg">Mis próximas reservas</h3>
+        <div id="bookingsList" class="bookings-list"></div>
+      </section>
+
+      <!-- Panel: Progreso -->
+      <section class="app-panel" id="memberProgress">
+        <h2>Seguimiento de progreso</h2>
+        <form id="progressForm" class="progress-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="progWeight">Peso (kg)</label>
+              <input type="number" step="0.1" id="progWeight" required>
+            </div>
+            <div class="form-group">
+              <label for="progWaist">Cintura (cm)</label>
+              <input type="number" step="0.1" id="progWaist">
+            </div>
+            <div class="form-group">
+              <label for="progArm">Brazo (cm)</label>
+              <input type="number" step="0.1" id="progArm">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Guardar registro</button>
+        </form>
+        <div class="chart-card mt-lg">
+          <h3>Evolución del peso</h3>
+          <canvas id="weightChart" height="220"></canvas>
+        </div>
+      </section>
+
+      <!-- Panel: Historial -->
+      <section class="app-panel" id="memberHistory">
+        <h2>Historial de entrenamientos</h2>
+        <div id="historyList" class="history-list"></div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- ============ PANEL ADMIN ============ -->
+<div class="app-overlay" id="adminArea">
+  <div class="app-shell">
+    <aside class="app-sidebar">
+      <a href="#home" class="logo app-logo">FIT<span>CLUB</span></a>
+      <nav class="app-nav">
+        <button class="app-nav-link active" data-panel="adminDashboard"><i class="fa-solid fa-chart-pie"></i> Dashboard</button>
+        <button class="app-nav-link" data-panel="adminUsers"><i class="fa-solid fa-users"></i> Usuarios</button>
+        <button class="app-nav-link" data-panel="adminRoutines"><i class="fa-solid fa-clipboard-list"></i> Rutinas</button>
+        <button class="app-nav-link" data-panel="adminSchedule"><i class="fa-solid fa-calendar-days"></i> Horarios</button>
+        <button class="app-nav-link" data-panel="adminDisciplines"><i class="fa-solid fa-fire"></i> Disciplinas</button>
+      </nav>
+      <button class="btn btn-outline-light btn-sm btn-block" id="logoutBtnAdmin"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</button>
+    </aside>
+
+    <main class="app-main">
+      <header class="app-topbar">
+        <button class="app-back" id="closeAdminArea"><i class="fa-solid fa-arrow-left"></i> Volver al sitio</button>
+        <div class="app-user-chip"><i class="fa-solid fa-user-shield"></i> Administrador</div>
+      </header>
+
+      <!-- Dashboard -->
+      <section class="app-panel active" id="adminDashboard">
+        <h2>Estadísticas generales</h2>
+        <div class="stats-grid">
+          <div class="stat-card"><i class="fa-solid fa-users"></i><div><span id="statUsers">0</span><small>Socios registrados</small></div></div>
+          <div class="stat-card"><i class="fa-solid fa-calendar-check"></i><div><span id="statBookings">0</span><small>Reservas activas</small></div></div>
+          <div class="stat-card"><i class="fa-solid fa-dumbbell"></i><div><span id="statRoutines">0</span><small>Rutinas asignadas</small></div></div>
+          <div class="stat-card"><i class="fa-solid fa-fire"></i><div><span id="statDisciplines">5</span><small>Disciplinas activas</small></div></div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">
+            <h3>Asistencia mensual</h3>
+            <canvas id="attendanceChart" height="220"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Actividad semanal</h3>
+            <canvas id="weeklyActivityChart" height="220"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Entrenamientos por disciplina</h3>
+            <canvas id="disciplineChart" height="220"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Socios por plan</h3>
+            <canvas id="plansChart" height="220"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- Usuarios -->
+      <section class="app-panel" id="adminUsers">
+        <div class="panel-head">
+          <h2>Gestión de usuarios</h2>
+          <button class="btn btn-primary btn-sm" id="addUserBtn"><i class="fa-solid fa-plus"></i> Nuevo usuario</button>
+        </div>
+        <div class="table-wrap">
+          <table class="admin-table" id="usersTable">
+            <thead>
+              <tr><th>Nombre</th><th>Email</th><th>Plan</th><th>Rol</th><th>Acciones</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Rutinas -->
+      <section class="app-panel" id="adminRoutines">
+        <h2>Asignar rutina personalizada</h2>
+        <form id="routineForm" class="routine-assign-form">
+          <div class="form-group">
+            <label for="routineUserSelect">Socio</label>
+            <select id="routineUserSelect" required></select>
+          </div>
+          <div class="form-group">
+            <label for="routineText">Rutina (una línea por ejercicio)</label>
+            <textarea id="routineText" rows="6" placeholder="Lunes: Sentadilla 4x10, Press banca 4x8&#10;Martes: Peso muerto 4x6..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Guardar rutina</button>
+        </form>
+      </section>
+
+      <!-- Horarios -->
+      <section class="app-panel" id="adminSchedule">
+        <div class="panel-head">
+          <h2>Gestionar horarios</h2>
+        </div>
+        <p class="muted">Editá la celda y presioná Enter o hacé click afuera para guardar.</p>
+        <div class="table-wrap">
+          <table class="schedule-table" id="adminScheduleTable"></table>
+        </div>
+      </section>
+
+      <!-- Disciplinas -->
+      <section class="app-panel" id="adminDisciplines">
+        <div class="panel-head">
+          <h2>Gestionar disciplinas</h2>
+          <button class="btn btn-primary btn-sm" id="addDisciplineBtn"><i class="fa-solid fa-plus"></i> Nueva disciplina</button>
+        </div>
+        <div class="table-wrap">
+          <table class="admin-table" id="disciplinesTable">
+            <thead><tr><th>Nombre</th><th>Nivel</th><th>Descripción</th><th>Acciones</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- ============ MODAL: USUARIO (crear/editar) ============ -->
+<div class="modal-overlay" id="userModal">
+  <div class="modal">
+    <button class="modal-close" data-close="userModal" aria-label="Cerrar">&times;</button>
+    <h3 id="userModalTitle">Nuevo usuario</h3>
+    <form id="userForm">
+      <input type="hidden" id="userFormId">
+      <div class="form-group"><label for="userFormName">Nombre</label><input type="text" id="userFormName" required></div>
+      <div class="form-group"><label for="userFormEmail">Email</label><input type="email" id="userFormEmail" required></div>
+      <div class="form-group"><label for="userFormPass">Contraseña</label><input type="text" id="userFormPass" placeholder="Dejar vacío para no cambiar"></div>
+      <div class="form-group">
+        <label for="userFormPlan">Plan</label>
+        <select id="userFormPlan"><option>Básico</option><option>Plus</option><option>Premium</option></select>
+      </div>
+      <div class="form-group">
+        <label for="userFormRole">Rol</label>
+        <select id="userFormRole"><option value="member">Socio</option><option value="admin">Administrador</option></select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Guardar usuario</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ MODAL: DISCIPLINA (crear/editar) ============ -->
+<div class="modal-overlay" id="disciplineModal">
+  <div class="modal">
+    <button class="modal-close" data-close="disciplineModal" aria-label="Cerrar">&times;</button>
+    <h3 id="disciplineModalTitle">Nueva disciplina</h3>
+    <form id="disciplineForm">
+      <input type="hidden" id="discFormId">
+      <div class="form-group"><label for="discFormName">Nombre</label><input type="text" id="discFormName" required></div>
+      <div class="form-group">
+        <label for="discFormLevel">Nivel</label>
+        <select id="discFormLevel"><option>Todos los niveles</option><option>Intermedio</option><option>Avanzado</option></select>
+      </div>
+      <div class="form-group"><label for="discFormDesc">Descripción</label><textarea id="discFormDesc" rows="3" required></textarea></div>
+      <button type="submit" class="btn btn-primary btn-block">Guardar disciplina</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
